@@ -19,7 +19,7 @@ const TodoItem = ({ id, title, isDone }) => {
 
 
   return(
-    <li class="list-group-item d-flex justify-content-between align-items-center">
+    <li className="list-group-item d-flex justify-content-between align-items-center">
         <div>
             <input className="form-check-input" type="checkbox" id="flexCheckDefault" onChange={ handleMarkTodo } />
             <label htmlFor="flexCheckDefault">

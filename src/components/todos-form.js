@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
-import { v4 as uuidv4 } from "uuidv4";
+import { v4 } from "uuid";
 import { addTodo } from "../actions/todos";
 
 
@@ -13,7 +13,7 @@ const TodosForm = () => {
     e.preventDefault();
     dispatch(addTodo({
       title: inputRef.current.value,
-      id: uuidv4(),
+      id: v4(),
       isDone: false,
     }));
 
